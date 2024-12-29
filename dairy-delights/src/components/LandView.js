@@ -8,11 +8,10 @@ const StyledTagline = styled.p`
   color: goldenrod;
   font-size: 30px;
   font-weight: 600;
-  margin-left: -500px;
+  margin-left: -550px;
   float: left;
   margin-top: 140px;
 `;
-
 const HeroContainer = styled.div`
   position: relative;
   padding: 20px;
@@ -36,7 +35,7 @@ const LandView = ({ products, onAddToCart }) => {
           style={{
             float: "left",
             fontFamily: "Permanent Marker, serif",
-            color: "green",
+            color: "skyblue",
             fontWeight: "500px",
             fontSize: "100px",
             marginLeft: "40px",
@@ -44,9 +43,9 @@ const LandView = ({ products, onAddToCart }) => {
         >
           Dairy Farm
         </Typography>
-        <StyledTagline>Nature’s Goodness in Every Drop.</StyledTagline>
+        <StyledTagline >🐄 "Where nature meets nurture–pure <br/>dairy, every time.🥛</StyledTagline>
         <img
-          src="../dairies/cartoon-kid-milking-a-cow-vector.jpg"
+          src="../dairies/istockphoto-483839016-612x612.jpg"
           height={"300px"}
           width={"500px"}
           style={{ float: "right" }}

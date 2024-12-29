@@ -64,10 +64,9 @@ const OrderRequestsView = () => {
           <TableCell>{item.productName}</TableCell>
           <TableCell>{item.quantity || "N/A"}</TableCell>         
           <TableCell>{order.customer?.name || "Unknown"}</TableCell>
-          <TableCell>{item.price}</TableCell>
+          <TableCell>{item.price*item.quantity}</TableCell>
           <TableCell>{new Date(order.date).toLocaleDateString()}</TableCell>
           <TableCell>{order.customer?.address || "N/A"}</TableCell>
-
         </TableRow>
       ));
     } else {
@@ -78,7 +77,7 @@ const OrderRequestsView = () => {
           <TableCell>{order.productName}</TableCell>
           <TableCell>{order.quantity || "N/A"}</TableCell>
           <TableCell>{order.firstName || order.customer?.name || "Unknown"}</TableCell>
-          <TableCell>{order.price}</TableCell>
+          <TableCell>{order.price*order.quantity}</TableCell>
           <TableCell>{new Date(order.deliveryDate || order.date).toLocaleDateString()}</TableCell>
           <TableCell>{order.address || order.customer?.address || "N/A"}</TableCell>
         </TableRow>

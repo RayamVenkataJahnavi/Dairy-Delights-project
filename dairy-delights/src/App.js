@@ -65,6 +65,11 @@ export default function App() {
 const handlePlaceOrder=()=>{
   setCartItems([]);
 }
+
+const handleCartUpdate = (updatedItems) => {
+  setCartItems(updatedItems); // Update cart state in parent
+};
+
   return (
     <Router>
       <div className="App">
@@ -86,7 +91,7 @@ const handlePlaceOrder=()=>{
             }
           />
           <Route path="/OrderView" element={<OrderView cartItems={cartItems} />} />
-          <Route path="/ProductDetails" element={<ProductDetails  handlePlaceOrder={handlePlaceOrder}/>} />
+          <Route path="/ProductDetails" element={<ProductDetails  handlePlaceOrder={handlePlaceOrder} handleCartUpdate={handleCartUpdate}/>} />
           <Route path="/login" element={<LoginView />} />
         <Route path="/order-requests" element={<OrderRequestsView />} />
         </Routes>

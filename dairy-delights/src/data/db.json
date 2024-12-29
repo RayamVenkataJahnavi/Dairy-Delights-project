@@ -14,7 +14,7 @@
       "category": "milk",
       "productName": "Milk Bottles",
       "description": "3 x 500ml bottle pack",
-      "price": "110",
+      "price": "80",
       "image": "dairies/milk_bottles.jpg",
       "nutritionalValue": "rich in calcium. good for bones"
     },
@@ -274,7 +274,7 @@
           "category": "milk",
           "productName": "Milk Bottles",
           "description": "3 x 500ml bottle pack",
-          "price": "110",
+          "price": "80",
           "image": "dairies/milk_bottles.jpg",
           "nutritionalValue": "rich in calcium. good for bones"
         }
@@ -551,6 +551,171 @@
       ],
       "totalPrice": 110,
       "date": "2024-12-20T06:32:24.077Z"
+    },
+    {
+      "id": "109f",
+      "customer": {
+        "name": "janu",
+        "email": "janu@gmail.com",
+        "address": "hyd",
+        "pincode": "524234"
+      },
+      "items": [
+        {
+          "id": "1",
+          "category": "milk",
+          "productName": "Bottled Milk",
+          "description": "500ml bottle pack",
+          "price": "30",
+          "image": "dairies/milk.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 2
+        },
+        {
+          "id": "2",
+          "category": "milk",
+          "productName": "Milk Bottles",
+          "description": "3 x 500ml bottle pack",
+          "price": "110",
+          "image": "dairies/milk_bottles.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 280,
+      "date": "2024-12-21T17:45:06.440Z"
+    },
+    {
+      "id": "9788",
+      "customer": {
+        "name": "janu",
+        "email": "janu@gmail.com",
+        "address": "haaa",
+        "pincode": "524234"
+      },
+      "items": [
+        {
+          "id": "2",
+          "category": "milk",
+          "productName": "Milk Bottles",
+          "description": "3 x 500ml bottle pack",
+          "price": "110",
+          "image": "dairies/milk_bottles.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "category": "milk",
+          "productName": "Milk Tetra Pack",
+          "description": "1 litre bottle pack",
+          "price": "100",
+          "image": "dairies/milk-tetra.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 2
+        },
+        {
+          "id": "1",
+          "category": "milk",
+          "productName": "Bottled Milk",
+          "description": "500ml bottle pack",
+          "price": "30",
+          "image": "dairies/milk.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 370,
+      "date": "2024-12-22T10:24:16.559Z"
+    },
+    {
+      "id": "d8c0",
+      "customer": {
+        "name": "jnau",
+        "email": "jan@gmail.com",
+        "address": "hyd,rk street",
+        "pincode": "524234"
+      },
+      "items": [
+        {
+          "id": "3",
+          "category": "milk",
+          "productName": "Milk Tetra Pack",
+          "description": "1 litre bottle pack",
+          "price": "100",
+          "image": "dairies/milk-tetra.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "category": "milk",
+          "productName": "Milk Tetra Pack",
+          "description": "1 litre bottle pack",
+          "price": "100",
+          "image": "dairies/milk-tetra.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 1
+        },
+        {
+          "id": "3",
+          "category": "milk",
+          "productName": "Milk Tetra Pack",
+          "description": "1 litre bottle pack",
+          "price": "100",
+          "image": "dairies/milk-tetra.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 300,
+      "date": "2024-12-23T16:21:47.712Z"
+    },
+    {
+      "id": "3f9f",
+      "customer": {
+        "name": "janu",
+        "email": "janu@gmail.com",
+        "address": "hyd",
+        "pincode": "524234"
+      },
+      "items": [
+        {
+          "id": "2",
+          "category": "milk",
+          "productName": "Milk Bottles",
+          "description": "3 x 500ml bottle pack",
+          "price": "80",
+          "image": "dairies/milk_bottles.jpg",
+          "nutritionalValue": "rich in calcium. good for bones",
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 160,
+      "date": "2024-12-24T09:12:44.503Z"
+    },
+    {
+      "id": "1b77",
+      "customer": {
+        "name": "janu",
+        "email": "janu@gmail.com",
+        "address": "hyd",
+        "pincode": "523243"
+      },
+      "items": [
+        {
+          "id": "17",
+          "category": "paneer",
+          "productName": "Paneer - Cottage Cheese",
+          "description": "200gm pack",
+          "price": "100",
+          "image": "dairies/paneer.jpg",
+          "nutritionalValue": "rich in protein, calcium. increases good cholesterol",
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 100,
+      "date": "2024-12-24T09:13:21.424Z"
     }
   ]
 }

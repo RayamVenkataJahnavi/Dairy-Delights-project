@@ -16,12 +16,7 @@ const Header = ({ cartItems, onCategoryClick }) => {
   const navigate = useNavigate();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  useEffect(() => {
-    const authStatus = localStorage.getItem('isAuthenticated');
-    if (authStatus === 'true') {
-      setIsAuthenticated(true);
-    }
-  }, []);
+ 
 
   const handleScrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -30,9 +25,9 @@ const Header = ({ cartItems, onCategoryClick }) => {
 
   const handleLoginLogout = () => {
     if (isAuthenticated) {
-      localStorage.setItem('isAuthenticated', 'false');
-      setIsAuthenticated(false);
       navigate('/');
+      setIsAuthenticated(false);
+
     } else {
       navigate('/login');
     }

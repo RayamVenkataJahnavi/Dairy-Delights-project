@@ -18,7 +18,7 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const ProductDetails = ({ handlePlaceOrder }) => {
+const ProductDetails = ({ handlePlaceOrder,handleCartUpdate }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -43,18 +43,25 @@ const ProductDetails = ({ handlePlaceOrder }) => {
   );
 
   const updateQuantity = (index, increment) => {
-    setItems((prevItems) =>
-      prevItems.map((item, i) =>
+    setItems((prevItems) => {
+      const updatedItems = prevItems.map((item, i) =>
         i === index
           ? { ...item, quantity: Math.max(1, item.quantity + increment) }
           : item
-      )
-    );
+      );
+      handleCartUpdate(updatedItems); // Call handleCartUpdate with new items
+      return updatedItems;
+    });
   };
-
+  
   const removeItem = (index) => {
-    setItems((prevItems) => prevItems.filter((_, i) => i !== index));
+    setItems((prevItems) => {
+      const updatedItems = prevItems.filter((_, i) => i !== index);
+      handleCartUpdate(updatedItems); // Call handleCartUpdate with new items
+      return updatedItems;
+    });
   };
+  
 
   const onSubmit = async (data) => {
     const orderData = {
@@ -66,7 +73,6 @@ const ProductDetails = ({ handlePlaceOrder }) => {
 
     try {
       await axios.post("http://localhost:3001/orders", orderData);
-
       setSnackbarMessage("Order placed successfully!");
       setSnackbarSeverity("success");
       setOpenSnackbar(true);
@@ -84,7 +90,13 @@ const ProductDetails = ({ handlePlaceOrder }) => {
   };
 
   if (!items.length) {
-    return <Typography variant="h6">No products found.</Typography>;
+    return <Typography>
+     <img
+          src="../dairies/empty-cart-flat-illustration-concept-vector.jpg"
+          alt="Cart is empty"
+          style={{ width: "40%", height: "40%", marginBottom: "20px" }}
+        />
+    </Typography>;
   }
 
   return (
@@ -210,7 +222,7 @@ const ProductDetails = ({ handlePlaceOrder }) => {
           type="submit"
           variant="contained"
           color="primary"
-          style={{ marginRight: "10px" }}
+          style={{ marginRight: "10px" }} onClick={handlePlaceOrder}
         >
           Place Order
         </Button>
